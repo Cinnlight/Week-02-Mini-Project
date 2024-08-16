@@ -6,7 +6,8 @@
     --off-white: #f8f8f8;
     --dark-slate-blue: #483D8B;
     --slate-blue: #6a5acd;
-    --dark-slate-gray: #2F4F4F; 
+    --dark-slate-gray: #2F4F4F;
+    --light-salmon: #ffb7b7;
 }
 
 body {
@@ -29,6 +30,22 @@ h1, h2, h3, p {
     flex-wrap: wrap;
 }
 
+.snippet-sizer {
+    width: calc(100% / 3);
+}
+
+@media (max-width: 768px) {
+    .snippet-sizer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .snippet-sizer {
+        width: 100%;
+    }
+}
+
 .snippet-card {
     padding: 20px;
     margin: 20px 20px 0 20px;
@@ -36,7 +53,6 @@ h1, h2, h3, p {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     background-image: linear-gradient(var(--dark-slate-blue), var(--dark-purple));
 }
@@ -47,6 +63,19 @@ h1, h2, h3, p {
     left: 50%;
     transform: translateX(-50%);
     width: max-content;
+}
+
+.snippet-description {
+    font-size: 14px;
+}
+
+code {
+    color: var(--pastel-purple);
+}
+
+pre.snippet-code code {
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 article div {
@@ -61,3 +90,25 @@ article div header h3 {
     background-color: var(--slate-blue);
     padding: 4px;
 }
+
+.snippet-card, h3 {
+
+    transition: all 0.5s ease-in-out;
+}
+
+.snippet-card code {
+    cursor: pointer;
+  }
+
+.snippet-card:hover,
+.snippet-card:hover h3 {
+    box-shadow: 
+    inset 0px 0px 8px var(--pastel-lavender), 
+    0 0 15px var(--pastel-purple);
+}
+  
+  .snippet-card pre code::selection {
+    background-color: var(--light-salmon);
+    color: #000;
+  }
+  
