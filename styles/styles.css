@@ -1,0 +1,63 @@
+:root {
+    --pastel-purple: #9a8f97;
+    --pastel-lavender: #c3b1e1;
+    --dark-purple: #5a4a6e;
+    --light-grey: #dcdcdc;
+    --off-white: #f8f8f8;
+    --dark-slate-blue: #483D8B;
+    --slate-blue: #6a5acd;
+    --dark-slate-gray: #2F4F4F; 
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--dark-purple);
+}
+
+h1, h2, h3, p {
+    color: var(--off-white) 
+}
+
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.snippet-card {
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(var(--dark-slate-blue), var(--dark-purple));
+}
+
+.snippet-header {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+article div header h3 {
+    border: 2px solid var(--pastel-lavender);
+    border-radius: 10px;
+    background-color: var(--slate-blue);
+    padding: 4px;
+}
