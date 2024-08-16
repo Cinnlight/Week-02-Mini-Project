@@ -20,86 +20,135 @@
 
     <section id="card-02">
  
-        <h2>Lorem ipsum odor amet, consectetuer adipiscing elit.</h2>
+        <h2>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Highlight any snippet section and copy it for your own use.</h2>
     </section>
 
-       <!-- First Row of CSS Cards -->
+       <!-- CSS Cards -->
 
     <section class="card-container" id="card-03">
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
-
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>Flexbox Row</h3>
+                    </header>
+                    <p class="snippet-description">
+                        Use these three properties to create a Flexbox row layout.
+                    </p>
+                    <pre class="snippet-code"><code>
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>Flexbox Column</h3>
+                    </header>
+                    <p class="snippet-description">
+                        Use this to create a Flexbox column layout.
+                    </p>
+                    <pre class="snippet-code"><code>
+.column {
+    display: flex;
+    flex-direction: column;
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
         
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
-    </section>
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>CSS Grid Layout</h3>
+                    </header>
+                    <p class="snippet-description">
+                        Build a 12-column layout using CSS Grid
+                    </p>
+                    <pre class="snippet-code"><code>
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+    repeate (12, 1fr);
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
 
-    <section class="card-container" id="card-04">
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>Linear Gradients</h3>
+                    </header>
+                    <p class="snippet-description">
+                        This will create a background linear gradient from top to bottom.
+                    </p>
+                    <pre class="snippet-code"><code>
+.linear-gradient-background {
+    background-image: linear-gradient(
+    color-1, color-2
+    );
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
 
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>Box Transition Glow</h3>
+                    </header>
+                    <p class="snippet-description">
+                        Use transition and box shadows to glow on hover.
+                    </p>
+                    <pre class="snippet-code"><code>
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
 
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
+.code-card:hover, 
+code-card:hover .card-header {
+    box-shadow: 
+    inset 0px 0px 8px color-1, 
+    0 0 15px color-2;
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
         
-        <article class="snippet-card"> 
-            <div>
-                <header class="snippet-header">
-                    <h3>Title</h3>
-                </header>
-                <p class="snippet-description">
-                    Lorem ipsum odor
-                </p>
-                <pre class="snippet-code"><code>Code Snippet</code></pre>
-            </div>
-        </article>
+        <div class="snippet-sizer">
+            <article class="snippet-card"> 
+                <div>
+                    <header class="snippet-header">
+                        <h3>Overlay Card with Title</h3>
+                    </header>
+                    <p class="snippet-description">
+                        Use position poperties and negative margins to raise elements higher than their natural starting point.
+                    </p>
+                    <pre class="snippet-code"><code>
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+                    </code></pre>
+                </div>
+            </article>
+        </div>
     </section>
 </body>
 
